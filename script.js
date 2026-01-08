@@ -36,7 +36,7 @@ function sendMessage() {
   }
 
   setTimeout(() => {
-    messages.innerHTML += `<p><b>bot:</b> ${botMessage}</p>`;
+    messages.innerHTML += `<p><b>Alexa:</b> ${botMessage}</p>`;
     messages.scrollTop = messages.scrollHeight;
   }, 300);
 
@@ -48,3 +48,4 @@ sendBtn.onclick = sendMessage;
 input.addEventListener("keypress", e => {
   if (e.key === "Enter") sendMessage();
 });
+
